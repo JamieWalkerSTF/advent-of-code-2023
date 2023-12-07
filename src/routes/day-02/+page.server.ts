@@ -1,15 +1,13 @@
 import fs from 'fs';
 
-const data = fs.readFileSync('src/routes/day-02/data.txt', 'utf8').trim().split('\r\n');
-
-const maxValues = {
-	red: 12,
-	blue: 13,
-	green: 14
-};
+const data = fs.readFileSync('src/routes/day-01/data.txt', 'utf8').trim().split('\r\n');
 
 //Calculate Part 1 Solution
-function getValue1(data: string[]) {}
+function getValue1(data: string[]) {
+	const gameData = data.map((item) => {
+		console.log(item);
+	});
+}
 
 //Calculate Part 2 Solution
 // function getValue2(data: string[]) {
@@ -25,7 +23,7 @@ function getValue1(data: string[]) {}
 //Send function to frontend
 export function load() {
 	return {
-		part1: getValue1(data)
+		part1: 'Not yet implemented'
 		// part2: getValue2(data)
 	};
 }
